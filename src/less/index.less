@@ -1,0 +1,42 @@
+@import 'reset';
+
+#wrap{
+  height: 100%;
+  #header{
+    background: pink;
+    .header-main{
+      width: 1100px;
+      height: 80px;
+      margin: 0 auto;
+      background: deeppink;
+      .logo{
+        float: left;
+        margin-top: 15px;
+      }
+      .nav{
+        float: right;
+        margin-top: 50px;
+        li{
+          position: relative;
+          float: left;
+          margin-left: 40px;
+          color: #009EE0;
+          &:hover{
+            .down{
+              width:100%;
+            }
+          }
+          .down{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width:0;
+            overflow: hidden;
+            transition: width 1s;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
